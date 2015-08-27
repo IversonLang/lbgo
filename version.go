@@ -41,7 +41,7 @@ func init() {
 }
 
 func versionCmd(cmd *Command, args []string) int {
-	fmt.Println("lbgo   :" + version)
+	fmt.Println("lbgo  :" + version)
 	goversion, err := exec.Command("go", "version").Output()
 	if err != nil {
 		log.Fatal(err)
